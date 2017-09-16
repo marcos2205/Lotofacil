@@ -12,7 +12,6 @@ class confereJogo():
 	client = MongoClient('127.0.0.1')
 	#use na database
 	db = client['lotofacil']
-		
 
 	def __init__(self):
 		upd = bancoUpdate()
