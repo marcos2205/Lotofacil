@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #-*- coding: utf8 -*-
 
-from bancoUpdate import bancoUpdate
+import bancoUpdate
 from pymongo import MongoClient
 
 class confereJogo():
@@ -14,8 +14,7 @@ class confereJogo():
 	db = client['lotofacil']
 
 	def __init__(self):
-		upd = bancoUpdate()
-		upd.atualizajogo()
+		bancoUpdate.atualizajogo()
 	
 	def inserirJogo(self):
 		while True:
